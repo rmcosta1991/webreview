@@ -1,0 +1,98 @@
+/* Importando uma fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência para destacar */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff; /* Alterando a cor do título para azul */
+    font-size: 2.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+select,
+input[type="number"],
+button {
+    width: calc(100% - 40px); /* Adicionando margens para manter a largura total de 100% */
+    max-width: 400px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 20px; /* Tornando os elementos mais arredondados */
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo branco com transparência */
+    color: #333; /* Cor do texto para contrastar */
+}
+
+input[type="number"] {
+    max-width: 150px; /* Ajustando a largura do input de número */
+    text-align: center; /* Centralizando o texto */
+}
+
+select:focus,
+input[type="number"]:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#carList {
+    text-align: left;
+}
+
+.car-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+}
+
+.car-item h2 {
+    margin: 0 0 10px;
+    color: #007bff;
+    font-size: 1.8em;
+}
+
+.car-item p {
+    margin: 5px 0;
+}
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback de Carros</h1>
+        <form id="carForm">
+            <select id="carSelect" required>
+                <option value="" disabled selected>Selecione um carro</option>
+                <option value="Audi A3">Audi A3</option>
+                <option value="BMW Série 3">BMW Série 3</option>
+                <option value="Mercedes Classe C">Mercedes Classe C</option>
+                <option value="Volkswagen Golf">Volkswagen Golf</option>
+                <!-- Adicione mais carros aqui, se necessário -->
+            </select>
+            <input type="number" id="carRating" placeholder="Classificação (1-5)" min="1" max="5" required>
+            <button type="submit">Adicionar Classificação</button>
+        </form>
+        <div id="carList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
